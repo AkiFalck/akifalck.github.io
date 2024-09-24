@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <title>Dig's Cafe | Leivonnaiset</title>
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+
+    <meta name="author" content="AF">
+    <meta name="description"
+        content="Kahvila Dig's Cafe sijaitsee Pasilan sykkeessä Ratapihantiellä Haaga-Helian campuksella.">
+    <!-- lisää meta-elementtejä -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <!-- tähän tulee sivun sisältö -->
+    <header>
+        <h1>Dig's Cafe</h1>
+        <nav class="navbar">
+            <button class="burger" id="burger">
+                &#9776; <!-- This is the hamburger icon -->
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li>
+                    <a href="index.html">Etusivu</a>
+                </li>
+                <li>
+                    <a href="kahvit.html">Kahvit</a>
+                </li>
+                <li>
+                    <a href="leivonnaiset.html">Leivonnaiset</a>
+                </li>
+                <li>
+                    <a href="yhteystiedot.html">Ota Yhteyttä</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+
+        <p class="container">Tervetuloa Dig's Cafeen!</p>
+        <p>Kahvila Dig's Cafe sijaitsee Pasilan sykkeessä Ratapihantiellä Haaga-Helian campuksella.</p>
+
+        <div class="flex-container">
+            <div class="flex-item">
+                <h2>Uunituoreet leivonnaiset</h2>
+                <p id="container">Leivomme itse päivittäin pullat, piirakat ja kakut. Tarjolla on aina laaja valikoima
+                    itsetehtyjä herkkuja, on
+                    vakiintuneet suosikit unohtamatta tietenkään vaihtelua ja kausittaisia makuja.</p>
+                <img src="kuvat/tuote_kakku.jpg" alt="Mansikkakakku" class="tuotekuva">
+            </div>
+
+            <div class="flex-item">
+                <h2>Kahvit</h2>
+                <p style="color:rgb(13, 116, 0); text-shadow: black 1px 1px 1px;">Valikoimassamme on 35 erilaista kahvia
+                    aina perinteisestä kahvista espressokahvien kautta erilaisiin maustekahveihin.</p>
+                <img src="kuvat/tuote_kahvi.jpg" alt="Kahvikuppi" class="tuotekuva">
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <p>Dig's Cafe<br>
+            Ratapihantie 13 <br>
+            00520 Helsinki</p>
+    </footer>
+    <script>
+        document.getElementById('burger').addEventListener('click', function () {
+            document.getElementById('nav-links').classList.toggle('show');
+        });
+    </script>
+
+</body>
+
+</html>

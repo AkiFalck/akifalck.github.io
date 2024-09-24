@@ -1,0 +1,212 @@
+body {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: larger;
+}
+
+header {
+    color: white;
+    padding: 1em;
+    text-align: center;
+    font-size: 1.5em;
+    text-shadow: black 2px 2px 2px;
+    border-radius: 24px;
+}
+
+ul {
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+    overflow: hidden;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 25px;
+}
+
+#flex-item {
+    background-image: url(kuvat/tausta_kuppi.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex: 1;
+    border-radius: 24px;
+}
+
+.flex-item {
+    flex: 1;
+    background-color: rgb(244, 255, 146);
+    border-radius: 24px;
+    border-color: sienna;
+    border-width: 2px;
+    border-style: solid;
+    padding: 5px;
+    margin: 10px;
+}
+
+@media screen and (max-width: 700px) {
+    .flex-item {
+        flex: 1 1 100%;
+        padding: 5px;
+        margin: 10px;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0px;
+    }
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    background-image: url(kuvat/tausta_100.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.tuotekuva {
+    width: 80%;
+    max-width: 400px;
+    display: block;
+    margin: auto;
+    border-radius: 12px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+}
+
+.burger {
+    font-size: 32px;
+    color: black;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    display: none;
+    padding: 4px 8px;
+}
+
+.burger:hover {
+    background-color: rgb(32, 250, 12);
+}
+
+nav {
+    color: rgb(0, 0, 0);
+    align-items: center;
+    text-align: center;
+    text-shadow: black 2px 2px 2px;
+    border-radius: 24px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    gap: 12px;
+}
+
+
+@media (max-width: 930px) {
+    .burger {
+        display: block;
+    }
+
+    .nav-links {
+        align-items: center;
+        justify-content: space-evenly;
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: center;
+        top: 60px;
+        left: 0;
+        z-index: 1;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links li {
+        text-align: center;
+        padding: 5px 0;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+}
+
+
+footer {
+    background-color: rgb(241, 137, 137);
+    color: black;
+    text-size-adjust: 1.5em;
+    padding: 1em;
+    text-align: center;
+    text-shadow: black 1px 1px 1px;
+    border-radius: 16px;
+    border-color: sienna;
+    border-width: 2px;
+    border-style: solid;
+}
+
+#underlinepois {
+    text-decoration: none;
+}
+
+li {
+    background-color: rgb(71, 32, 0);
+    display: auto;
+    margin: 0 1em;
+    border-color: sienna;
+    border-width: 2px;
+    border-style: solid;
+}
+
+li:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(13, 94, 6);
+    border-color: sienna;
+    border-width: 2px;
+    border-style: solid;
+    text-decoration: none;
+}
+
+h1 {
+    color: rgb(124, 142, 255);
+    text-shadow: black 2px 2px 2px;
+}
+
+h2 {
+    color: rgb(78, 128, 187);
+    text-shadow: black 2px 2px 2px;
+}
+
+/*id*/
+#container {
+    color: rgb(136, 7, 108);
+}
+
+/*class'*/
+.container {
+    color: rgb(97, 60, 4)
+}
